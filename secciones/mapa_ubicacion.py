@@ -23,9 +23,9 @@ def generar_mapa_ubicacion(df3, centro_df, centro_seleccionado):
     # Mostrar el mapa
     st_folium(mapa, width=700, height=500)
 
-    # Mostrar la entidad administradora
+    # Mostrar la entidad administradora con un margen inferior
     st.markdown(f"""
-        <div style="background-color: #e9c46a; padding: 10px; border-radius: 5px;">
+        <div style="background-color: #e9c46a; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
             <h3 style="color: #264653; text-align: center;">Entidad Administradora: {entidad_administra}</h3>
         </div>
     """, unsafe_allow_html=True)
